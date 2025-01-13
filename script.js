@@ -20,3 +20,4 @@ const projectsWrapper = document.getElementById('projectsWrapper');
     rightArrow.addEventListener('click', () => {
         projectsWrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     });
+

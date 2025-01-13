@@ -147,6 +147,7 @@ a:hover {
   transform: none;
 }
 
+
 /* HOME */
 #home {
   display: flex;
@@ -247,7 +248,7 @@ a:hover {
 
 /* Skills */
 #skills {
-  padding-top: 20vh; /* Adjust padding to avoid content hiding behind the fixed nav */
+  padding-top: 20vh;
   height: 100vh;
   margin: 0 10rem;
   box-sizing: margin-box;
