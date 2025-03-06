@@ -9,8 +9,8 @@
   </head>
   <body>
 
-    <!--Main nav-->
-    <nav id="desktop-nav">
+    <!-- MAIN NAVBAR-->
+    <nav>
       <div class="music">
         <audio controls autoplay muted loop>
             <source src="Colorful-Flowers(chosic.com).mp3" type="audio/mpeg">
@@ -24,12 +24,12 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contacts">Contacts</a></li>
         </ul>
       </div>
     </nav>
 
-    <!--Hamburger nav-->
+    <!-- HAMBURGER NAVBAR -->
     <nav id="hamburger-nav">
       <div class="music">
         <audio controls autoplay muted loop>
@@ -48,52 +48,56 @@
           <li><a href="#home" onclick="toggleMenu()">Home</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
         </div>
       </div>
     </nav>
 
-    <!--Home section-->
+    <!-- HOME SECTION-->
     <section id="home">
       <div class="section__pic-container">
         <img src="/pictures/catgif.webp" alt="Sanji Gurung profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sanji Gurung</h1>
+        <p id="section__text__p1">Hello, I'm</p>
+        <h1 id="title">Sanji Gurung</h1>
         <p class="section__text__p2">Frontend Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('Sanji Gurung CV.pdf')"
+            onclick="window.open('Sanji Gurung(CV).pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='./#contacts'">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="pictures/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/sanji-gurung-50039732a/'"
-          />
-          <img
-            src="/pictures/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Sanji852g7'"
-          />
+          <a href="https://www.linkedin.com/in/sanji-gurung-50039732a/" target="_blank">
+            <img
+              src="pictures/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/Sanji852g7" target="_blank">
+            <img
+              src="/pictures/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+          
+          
         </div>
       </div>
     </section>
 
-    <!--Skills section-->
+    <!-- SKILLS SECTION -->
     <section id="skills" class="skills-section">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
+      <p id="section__text__p1">Explore My</p>
+      <h1 id="title">Skills</h1>
       <div class="text">
         Front-end
       </div>
@@ -137,244 +141,140 @@
           <img src="/pictures/git.png" alt="git logo">
           <span>Git</span>
         </div>
+
+        <div class="cell">
+          <img src="/pictures/github.png" alt="github logo">
+          <span>GitHub</span>
+        </div>
+      
+        <div class="cell">
+          <img src="/pictures/netlify.png" alt="Netlify logo">
+          <span>Netlify</span>
+        </div>
+      </div>
+
+      
+    </section>
+    
+    <!-- PROJECT SECTION -->
+    <section id="projects" class="projects-section">
+      <p id="section__text__p1">Look Into</p>
+      <h2 id="title">My Projects</h2>
+    
+      <div class="projects-wrapper">
+        <button class="scroll-btn left-btn">&#8249;</button>
+        <div class="projects-container">
+          <!-- Clone Project 1 -->
+          <div class="project">
+            <img src="/pictures/cloneproject.png" alt="Project 1 Clone">
+            <h3>Clone Project</h3>
+            <div class="project-links">
+              <a href="https://github.com/Sanji852g7/BootcampHTML.git" target="_blank" class="github-link"> GitHub
+              </a>
+              <a href="https://main--bootcamp-htmlproject.netlify.app/" target="_blank" class="live-demo">Live Demo</a>
+            </div>
+          </div>
+          <!-- Terminal Based Project 2 -->
+          <div class="project">
+            <img src="/pictures/terminalbased.png" alt="Project 2 Terminal Based">
+            <h3>JS Terminal Project</h3>
+            <div class="project-links">
+              <a href="https://github.com/Sanji852g7/BootcampJS.git" target="_blank" class="github-link"> GitHub
+              </a>
+            </div>
+          </div>       
+          <!-- Weather App Project 3 -->
+          <div class="project">
+            <img src="/pictures/weatherapp.png" alt="Project 3 Weather App">
+            <h3>Weather App</h3>
+            <div class="project-links">
+              <a href="https://github.com/Sanji852g7/bootcampjs_2.git" target="_blank" class="github-link"> GitHub
+              </a>
+              <a href="https://weatherappbootcampjs.netlify.app/" target="_blank" class="live-demo">Live Demo</a>
+            </div>
+          </div>
+          <!-- Tic Tac Toe Project 4 -->
+          <div class="project">
+            <img src="/pictures/tictactoe.png" alt="Project 4 Tic Tac Toe">
+            <h3>Python Tic Tac Toe</h3>
+            <div class="project-links">
+              <a href="https://github.com/Sanji852g7/BootcampPython.git" target="_blank" class="github-link"> GitHub
+              </a>
+            </div>
+          </div>
+          <!-- Survey Form Project 5 -->
+          <div class="project">
+            <img src="/pictures/surveyform.png" alt="Project 5 Survey Form">
+            <h3>Survey Form</h3>
+            <div class="project-links">
+              <a href="https://github.com/Sanji852g7/FreecodeCampHTML/tree/81b79f9410d1fb82d2ddca354f6aae39b9cdf72d/Survey%20Form" target="_blank" class="github-link"> GitHub
+              </a>
+              <a href="https://surveyformjob.netlify.app/" target="_blank" class="live-demo">Live Demo</a>
+            </div>
+          </div>
+          <!-- Tribute Page Project 6 -->
+          <div class="project">
+            <img src="/pictures/tributepage.png" alt="Project 6 Tribute Page">
+            <h3>Tribute Page</h3>
+            <div class="project-links">
+              <a href="https://github.com/Sanji852g7/FreecodeCampHTML/tree/81b79f9410d1fb82d2ddca354f6aae39b9cdf72d/Tribute%20Page" target="_blank" class="github-link"> GitHub
+              </a>
+              <a href="https://jobsurveyform.netlify.app/" target="_blank" class="live-demo">Live Demo</a>
+            </div>
+          </div>
+          <!-- Tech Documentation Page Project 7-->
+          <div class="project">
+            <img src="/pictures/techdocpage.png" alt="Project 7 Documentation Page">
+            <h3>Documentation Page</h3>
+            <div class="project-links">
+              <a href="https://github.com/Sanji852g7/FreecodeCampHTML/tree/81b79f9410d1fb82d2ddca354f6aae39b9cdf72d/Technical%20Documentaion%20Page" target="_blank" class="github-link"> GitHub
+              </a>
+              <a href="https://technicaldocumentationform.netlify.app/" target="_blank" class="live-demo">Live Demo</a>
+            </div>
+          </div>
+          <!-- Product Landing Page Project 8 -->
+          <div class="project">
+            <img src="/pictures/productlandingpage.png" alt="Project 8 Product Landing Page">
+            <h3>Product Landing Page</h3>
+            <div class="project-links">
+              <a href="https://github.com/Sanji852g7/FreecodeCampHTML/tree/81b79f9410d1fb82d2ddca354f6aae39b9cdf72d/Product%20Landing%20Page" target="_blank" class="github-link"> GitHub
+              </a>
+              <a href="https://productlandingpage-croissant-d92ca0f.netlify.app/" target="_blank" class="live-demo">Live Demo</a>
+            </div>
+          </div>
+
+          <!-- MORE PROJECTS GOES UNDER HERE-->
+        </div> 
+    
+        <button class="scroll-btn right-btn">&#8250;</button>
       </div>
     </section>
     
-    <!--Project section-->
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <button class="arrow left" id="leftArrow">&#8249;</button>
-      <div class="projects-wrapper" id="projectsWrapper">
-
-          <!-- Project 1 -->
-          <div class="details-container color-container">
-              <div class="article-container">
-                  <img
-                      src="/pictures/cloneproject.png"
-                      alt="Project 1 Clone Project"
-                      class="project-img"
-                  />
-              </div>
-              <h2 class="experience-sub-title project-title">Clone Project</h2>
-              <div class="btn-container">
-                  <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://github.com/Sanji852g7/BootcampHTML.git'"
-                  >
-                      Github
-                  </button>
-                  <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://main--bootcamp-htmlproject.netlify.app/'"
-                  >
-                      Live Demo
-                  </button>
-              </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="details-container color-container">
-              <div class="article-container">
-                  <img
-                      src="/pictures/terminalbased.png"
-                      alt="Project 2 Terminal Based Project"
-                      class="project-img"
-                  />
-              </div>
-              <h2 class="experience-sub-title project-title">Terminal Based Project</h2>
-              <div class="btn-container">
-                  <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://github.com/Sanji852g7/BootcampJS.git'"
-                  >
-                      Github
-                  </button>
-              </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="details-container color-container">
-            <div class="article-container">
-                <img
-                    src="/pictures/weatherapp.png"
-                    alt="Project 3 Weather App"
-                    class="project-img"
-                />
+          <!-- CONTACT SECTION -->
+          <section id="contacts">
+          <p id="section__text__p1">Get In Touch</p>
+          <h1 id="title">Contact Me</h1>
+            <div class="contact-wrapper">
+                
+              <form id="contact-form">
+                <div class="form-group">
+                  <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+          
+                <div class="form-group">
+                  <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+          
+                <div class="form-group">
+                  <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+          
+                <button type="submit" id="send-btn">Send Message</button>
+              </form>
             </div>
-            <h2 class="experience-sub-title project-title">JS Weather App</h2>
-            <div class="btn-container">
-                <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/Sanji852g7/bootcampjs_2.git'"
-                >
-                    Github
-                </button>
-                <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://weatherappbootcampjs.netlify.app/'"
-                >
-                    Live Demo
-                </button>
-            </div>
-        </div>
+          </section>
 
-        <!--Project 4-->
-        <div class="details-container color-container">
-          <div class="article-container">
-              <img
-                  src="/pictures/tictactoe.png"
-                  alt="Project 4 Tic Tac Toe"
-                  class="project-img"
-              />
-          </div>
-          <h2 class="experience-sub-title project-title">Python Tic Tac Toe</h2>
-          <div class="btn-container">
-              <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Sanji852g7/BootcampPython.git'"
-              >
-                  Github
-              </button>
-          </div>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="details-container color-container">
-        <div class="article-container">
-            <img
-                src="/pictures/surveyform.png"
-                alt="Project 5 Survey Form"
-                class="project-img"
-            />
-        </div>
-        <h2 class="experience-sub-title project-title">Survey Form</h2>
-        <div class="btn-container">
-            <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Sanji852g7/FreecodeCampHTML/tree/81b79f9410d1fb82d2ddca354f6aae39b9cdf72d/Survey%20Form'"
-            >
-                Github
-            </button>
-            <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://surveyformjob.netlify.app/'"
-            >
-                Live Demo
-            </button>
-        </div>
-    </div>
-
-    <!-- Project 6 -->
-    <div class="details-container color-container">
-      <div class="article-container">
-          <img
-              src="/pictures/tributepage.png"
-              alt="Project 5 Survey Form"
-              class="project-img"
-          />
-      </div>
-      <h2 class="experience-sub-title project-title">Tribute Page</h2>
-      <div class="btn-container">
-          <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/Sanji852g7/FreecodeCampHTML/tree/81b79f9410d1fb82d2ddca354f6aae39b9cdf72d/Tribute%20Page'"
-          >
-              Github
-          </button>
-          <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://jobsurveyform.netlify.app/'"
-          >
-              Live Demo
-          </button>
-      </div>
-  </div>
-
-  <!-- Project 7 -->
-  <div class="details-container color-container">
-    <div class="article-container">
-        <img
-            src="/pictures/techdocpage.png"
-            alt="Project 7 Tech Documentation Page"
-            class="project-img"
-        />
-    </div>
-    <h2 class="experience-sub-title project-title">Technical Documentation Page</h2>
-    <div class="btn-container">
-        <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/Sanji852g7/FreecodeCampHTML/tree/81b79f9410d1fb82d2ddca354f6aae39b9cdf72d/Technical%20Documentaion%20Page'"
-        >
-            Github
-        </button>
-        <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://technicaldocumentationform.netlify.app/'"
-        >
-            Live Demo
-        </button>
-    </div>
-</div>
-
-      <!-- Project 8 -->
-  <div class="details-container color-container">
-    <div class="article-container">
-        <img
-            src="/pictures/productlandingpage.png"
-            alt="Project 8 Product Landing Page"
-            class="project-img"
-        />
-    </div>
-    <h2 class="experience-sub-title project-title">Product Landing Page</h2>
-    <div class="btn-container">
-        <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/Sanji852g7/FreecodeCampHTML/tree/81b79f9410d1fb82d2ddca354f6aae39b9cdf72d/Product%20Landing%20Page'"
-        >
-            Github
-        </button>
-        <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://productlandingpage-croissant-d92ca0f.netlify.app/'"
-        >
-            Live Demo
-        </button>
-    </div>
-</div>
-
-
-      </div>
-      <button class="arrow right" id="rightArrow">&#8250;</button>
-  </section>
-    
-
-
-          <!--Contact section-->
-  <section id="contact" class="contact-section">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title-contact">Contact Me</h1>
-    <div class="group">
-      <div>
-      <img src="/pictures/cat2.gif" alt="cat and butterflies" class="cat-gif" />
-      </div>
-      <form>
-        <div class="form-container">
-          <label for="name">Name:</label>
-        <input type="text" id="name">
-
-        <label for="email">Email:</label>
-        <input type="email" id="email">
-        </div>
-        <label for="message">Message:</label>
-        <textarea id="message" cols="30" rows="10"></textarea>
-
-        <button type="submit" id="message-btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-        <!--Footer-->
+        <!-- FOOTER -->
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -391,5 +291,7 @@
 
       <!--Javascript-->
     <script src="script.js"></script>
+
+    
   </body>
 </html>
