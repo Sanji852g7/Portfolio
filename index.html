@@ -9,49 +9,43 @@
   </head>
   <body>
 
-    <!-- MAIN NAVBAR-->
-    <nav>
-      <div class="music">
-        <audio controls autoplay muted loop>
-            <source src="Colorful-Flowers(chosic.com).mp3" type="audio/mpeg">
-            <source src="Colorful-Flowers(chosic.com).wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-    
-      <div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-        </ul>
-      </div>
-    </nav>
+    <!-- MAIN NAVBAR -->
+<nav>
+  <div class="music">
+    <audio controls autoplay muted loop>
+      <source src="Colorful-Flowers(chosic.com).mp3" type="audio/mpeg">
+      <source src="Colorful-Flowers(chosic.com).wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 
-    <!-- HAMBURGER NAVBAR -->
-    <nav id="hamburger-nav">
-      <div class="music">
-        <audio controls autoplay muted loop>
-            <source src="Colorful-Flowers(chosic.com).mp3" type="audio/mpeg">
-            <source src="Colorful-Flowers(chosic.com).wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
+  <div class="nav-content">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+    </ul>
+  </div>
+  
+  <!-- HAMBURGER ICON (Visible only on mobile) -->
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
-        </div>
-      </div>
-    </nav>
+  </div>
+</nav>
+
+<!-- HAMBURGER MENU LINKS (Hidden by default) -->
+<div class="menu-links">
+  <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+  <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+  <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+  <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+</div>
+
 
     <!-- HOME SECTION-->
     <section id="home">

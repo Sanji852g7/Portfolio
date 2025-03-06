@@ -70,19 +70,19 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
-#hamburger-nav {
-  display: none;
-}
-
 .hamburger-menu {
-  position: relative;
-  display: inline-block;
+  display:none;
+  position: absolute;
+  top:34px;
+  right:30px;
+  padding-left:20px;
+  cursor:pointer;
 }
 
 .hamburger-icon {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 24px;
   width: 30px;
   cursor: pointer;
@@ -96,14 +96,23 @@ a:hover {
 }
 
 .menu-links {
-  position: absolute;
-  top: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(128, 128, 128, 0.95);
+  position: fixed;
+  top: 80px;
   right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
+  width: 200px;
+  padding: 10px 20px;
+  list-style: none;
+  color: black;
+  text-align: center;
   transition: all 0.3 ease-in-out;
+}
+
+.menu-links a:hover {
+  color:black;
 }
 
 .menu-links a {
@@ -111,7 +120,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: white;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -122,6 +131,7 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  display:flex;
 }
 
 .hamburger-icon.open span:first-child {
@@ -514,11 +524,11 @@ footer p {
   }
 
   .nav-links {
-    gap: 15px;
+    gap: 10px;
   }
 
   .nav-links a {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -526,33 +536,72 @@ footer p {
   .projects-container {
     width: 250px; /* 1 project */
   }
-  .navbar {
-    padding: 10px 15px;
+  audio {
+    width:200px;
+  }
+  nav {
+    justify-content: left ;
+    padding-left:10px;
   }
 
-  .nav-links {
-    gap: 3px;
+  .nav-content {
+    display: none; 
   }
 
-  .nav-links a {
-    font-size: 20px;
+  .hamburger-menu {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .menu-links.open {
+    display: flex; /* Show the menu links when the hamburger is clicked */
+  }
+
+  #home {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom:75px;
+  }
+
+  .section__pic-container {
+    width: 150px;
+    height: 40%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .section__text {
+    padding: 0 15px;
+  }
+
+  #socials-container {
+    gap: 1rem;
+    margin-top: 10px;
+  }
+
+  /* Skills Section */
+  #skills {
+    margin: 0 3rem;
+  }
+
+  .skills-section .cells {
+    flex-direction: column;
+  }
+
+  .skills-section .cells .cell {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Projects Section */
+  #projects {
+    margin-top:50px;
+    height:auto;
+  }
+  /* Contact Section */
+  #contacts {
+    margin-top:60px;
   }
 }
-
-@media (max-width:500px) {
-  .navbar {
-    padding: 10px 15px;
-  }
-
-  .nav-links {
-    gap: 2px;
-  }
-
-  .nav-links a {
-    font-size: 12px;
-  }
-}
-
-
-
-
