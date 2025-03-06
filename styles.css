@@ -509,11 +509,47 @@ footer p {
   .projects-container {
     width: calc(250px * 2 + 20px); /* 2 projects + gap */
   }
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 600px) {
   .projects-container {
     width: 250px; /* 1 project */
+  }
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    gap: 3px;
+  }
+
+  .nav-links a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:500px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
   }
 }
 
