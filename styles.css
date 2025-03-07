@@ -515,7 +515,7 @@ footer p {
   }
 }
 
-@media (max-width: 900px) and (min-width: 601px) {
+@media only screen and (max-width: 900px) and (min-width: 601px) {
   .projects-container {
     width: calc(250px * 2 + 20px); /* 2 projects + gap */
   }
@@ -603,5 +603,25 @@ footer p {
   /* Contact Section */
   #contacts {
     margin-top:60px;
+  }
+}
+
+/* Samsung Galaxy flip 4 */
+@media only screen and (max-width:360px) and (max-height:770px) and (-webkit-device-pixel-ratio:3){
+  .menu-links {
+    padding-top:30px;
+  }
+  #home {
+    height:85vh;
+  }
+}
+
+/* iphone 14 pro*/
+@media only screen and (max-width:393px) and (max-height:852px) and (-webkit-device-pixel-ratio:3){
+  .menu-links {
+    padding-top:42px;
+  }
+  #home {
+    height:80vh;
   }
 }
